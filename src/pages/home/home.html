@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            aluraCar
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-item *ngFor="let carro of carros" (click)="seleciona(carro)">
+            <h2>{{carro.nome}}</h2>
+            <h2>{{carro.preco}}</h2>
+            <h2>Disponível</h2>
+        </ion-item>
+    </ion-list>
+</ion-content>
